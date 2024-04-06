@@ -1,0 +1,134 @@
+.carrossel__titulo{
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo-titulo);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1.25em 0 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    display: none !important;
+}
+
+.swiper-pagination{
+    position: initial !important;
+    margin: .5em 0;
+}
+
+.card{
+    background-color: var(--cor-fundo-titulo);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo{
+    color: var(--cor-texto);
+    font-weight: 700;
+}
+
+.descricao__titulo__livro{
+    color: var(--cor-titulo);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1.25em 0;
+}
+
+.descricao__estrelinha{
+    padding: .5em 0;
+}
+
+.descricao__texto{
+    font-size: 14px;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.botoes__itens{
+    margin: 0 .5em;
+}
+
+.botoes__ancora{
+    background-color: var(--cor-texto);
+    padding: 1em 2.2em;
+    color: var(--cor-fundo-titulo);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px){
+    .carrossel__titulo{
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0 3em 0;
+    }
+
+    .swiper{
+        width: 65%;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block !important;
+        top: 60% !important;
+    }
+
+    .card{
+        width: 50%;
+        margin: 3% auto;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .carrossel__conteiner{
+        display: flex;
+        margin: 5em 20vw 5em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+
+    .swiper{
+        width: 65%;
+    }
+
+    .descricao__titulo{
+        font-size: 30px;
+    }
+
+    .descricao__texto{
+        margin-right: 3em;
+    }
+
+    .descricao{
+        margin-right: 2em;
+    }
+
+    .card{
+        width: 80%;
+        margin-left: 4em; 
+    }
+}
